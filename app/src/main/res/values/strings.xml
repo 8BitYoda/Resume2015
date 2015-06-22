@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Resume 2015</string>
+    <string name="my_name">Martin Hutchens</string>
+    <string name="my_email">HutchensMartin@gmail.com</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_experience">Experience</string>
+    <string name="title_activity_accomplishments">Accomplishments</string>
+
+    <!-- Education Strings -->
+    <string name="title_fragment_education">Education</string>
+    <string name="csu_title">Charleston Southern</string>
+    <string name="csu_degree">Bachelor of Science in Computer Science</string>
+    <string name="csu_gradYear">2015</string>
+    <string name="ph_title">Patrick Henry Community College</string>
+    <string name="ph_degree">Associates of Arts and Science</string>
+    <string name="ph_gradYear">2010</string>
+
+    <!-- About Strings -->
+    <string name="title_fragment_about">Martin Hutchens</string>
+    <string name="about_email">HutchensMartin@gmail.com</string>
+    <string name="about_github">GitHub: 8BitYoda</string>
+    <string name="about_cell">cell: 555-555-5555</string>
+    <string name="sub1_fragment_about">Professional Summary</string>
+    <string name="about_summary">Motivated and reliable Entry Level Java Developer with an excellent work ethic and programming language knowledge base</string>
+    <string name="about_summary2">Junior Android developer able to build applications from concept to final product to the client’s or project’s specifications</string>
+    <string name="about_summary3">Experienced in object-oriented programming; development, testing, and debugging code; design interfaces; and working with backend databases</string>
+    <string name="about_summary4">Able to work well independently or as part of a professional development team in order to meet and achieve project goals</string>
+    <string name="bullet">•</string>
+
+</resources>
