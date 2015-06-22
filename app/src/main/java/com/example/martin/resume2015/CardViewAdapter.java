@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
@@ -49,13 +48,13 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.JobVie
     public JobViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.cardview_experience_item, viewGroup, false);
         JobViewHolder pvh = new JobViewHolder(v);
-        CardView cv = (CardView) pvh.itemView.findViewById(R.id.reView);
-        cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+//        CardView cv = (CardView) pvh.itemView.findViewById(R.id.reView);
+//        cv.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
         return pvh;
     }
 
