@@ -52,7 +52,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
             }
             else{
                 Name = (TextView) itemView.findViewById(R.id.name);         // Creating Text View object from header.xml for name
-                email = (TextView) itemView.findViewById(R.id.email);       // Creating Text View object from header.xml for email
+                //email = (TextView) itemView.findViewById(R.id.email);       // Creating Text View object from header.xml for email
                 profile = (ImageView) itemView.findViewById(R.id.circleView);// Creating Image view object from header.xml for profile pic
                 Holderid = 0;                                                // Setting holder id = 0 as the object being populated are of type header view
             }
@@ -106,7 +106,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
         else{
             holder.profile.setImageResource(profile);           // set the resources for header view
             holder.Name.setText(name);
-            holder.email.setText(email);
+            //holder.email.setText(email);
         }
     }
 

@@ -21,8 +21,8 @@ public class MainActivity extends ActionBarActivity {
 //First We Declare Titles And Icons For Our Navigation Drawer List View
 //This Icons And Titles Are holded in an Array as you can see
 
-    String TITLES[] = {"About","Education","Experience","Accomplishments"};
-    int ICONS[] = {R.drawable.ic_action, R.drawable.ic_education, R.drawable.ic_experience, R.drawable.ic_accomplishment};
+    String TITLES[] = {"About","Education","Experience","Technical Toolbox"};
+    int ICONS[] = {R.drawable.ic_action, R.drawable.ic_education, R.drawable.ic_experience, R.drawable.ic_tool};
 
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
@@ -38,11 +38,11 @@ public class MainActivity extends ActionBarActivity {
     DrawerLayout Drawer;                                  // Declaring DrawerLayout
 
     ActionBarDrawerToggle mDrawerToggle;                  // Declaring Action Bar Drawer Toggle
-    final String[] fragments ={
+    final String[] fragments ={" ",
             "com.example.martin.resume2015.About",
             "com.example.martin.resume2015.Education",
             "com.example.martin.resume2015.Experience",
-            "com.example.martin.resume2015.Accomplishments"};
+            "com.example.martin.resume2015.Toolbox"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,13 +74,15 @@ public class MainActivity extends ActionBarActivity {
             public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
                 View child = recyclerView.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
                 if (child != null && mGestureDetector.onTouchEvent(motionEvent)) {
-                    if((recyclerView.getChildPosition(child)-1)<0){
+                    if((recyclerView.getChildPosition(child))==0){
+                        Intent intent = new Intent(MainActivity.this,GitWebActivity.class);
+                        startActivity(intent);
                         return true;
                     }
                     Drawer.closeDrawers();
                     FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
 
-                    tx.replace(R.id.main, Fragment.instantiate(MainActivity.this, fragments[recyclerView.getChildPosition(child) - 1]));
+                    tx.replace(R.id.main, Fragment.instantiate(MainActivity.this, fragments[recyclerView.getChildPosition(child)]));
                     tx.commit();
                     return true;
                 }
@@ -93,7 +95,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-        tx.replace(R.id.main,Fragment.instantiate(MainActivity.this, fragments[0]));
+        tx.replace(R.id.main,Fragment.instantiate(MainActivity.this, fragments[1]));
         tx.commit();
 
         mLayoutManager = new LinearLayoutManager(this);                 // Creating a layout Manager

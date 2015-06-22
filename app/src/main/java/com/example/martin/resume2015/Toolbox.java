@@ -1,8 +1,6 @@
 package com.example.martin.resume2015;
 
-import android.app.Activity;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,12 +11,12 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Accomplishments.OnFragmentInteractionListener} interface
+ * {@link Toolbox.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Accomplishments#newInstance} factory method to
+ * Use the {@link Toolbox#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Accomplishments extends Fragment {
+public class Toolbox extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -36,15 +34,15 @@ public class Accomplishments extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Accomplishments.
+     * @return A new instance of fragment Toolbox.
      */
     // TODO: Rename and change types and number of parameters
-    public static Accomplishments newInstance(Context context) {
-        Accomplishments fragment = new Accomplishments();
+    public static Toolbox newInstance(Context context) {
+        Toolbox fragment = new Toolbox();
         return fragment;
     }
 
-    public Accomplishments() {
+    public Toolbox() {
         // Required empty public constructor
     }
 

@@ -5,12 +5,12 @@
 
     <item android:id="@+id/action_email"
         android:title="@string/action_settings"
-        app:showAsAction="always"
+        app:showAsAction="never"
         android:icon="@drawable/ic_email"/>
 
     <item android:id="@+id/action_call"
         android:title="@string/action_settings"
-        app:showAsAction="always"
+        app:showAsAction="never"
         android:icon="@drawable/ic_call"/>
 
 </menu>

@@ -2,6 +2,7 @@
     <string name="app_name">Resume 2015</string>
     <string name="my_name">Martin Hutchens</string>
     <string name="my_email">HutchensMartin@gmail.com</string>
+    <string name="my_github">8BitYoda</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -13,8 +14,11 @@
 
     <string name="title_activity_main">MainActivity</string>
 
-    <string name="title_activity_experience">Experience</string>
-    <string name="title_activity_accomplishments">Accomplishments</string>
+    <string name="title_fragment_experience">Experience</string>
+
+    <!-- GitHub WebActivity-->
+    <string name="title_activity_git_web">8BitYoda\'s GitHub</string>
+    <string name="action_refresh">Refresh Page</string>
 
     <!-- Education Strings -->
     <string name="title_fragment_education">Education</string>
