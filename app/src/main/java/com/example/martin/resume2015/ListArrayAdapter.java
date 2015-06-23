@@ -55,7 +55,7 @@ public class ListArrayAdapter extends ArrayAdapter<Tools> {
             holder = (ViewHolder) convertView.getTag();
         }
         return convertView;
-    }
+    } //test test
 
     public static class ViewHolder {
         public  View View;
