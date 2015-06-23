@@ -36,6 +36,9 @@ public class Experience extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        ((MainActivity) getActivity()).setActionBarTitle("Experience"); //cahnges title
+
         // Inflate the layout for this fragment
         rootView = inflater.inflate(R.layout.fragment_experience, container, false);
         recView =(RecyclerView) rootView.findViewById(R.id.reView);
