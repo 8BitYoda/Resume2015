@@ -33,27 +33,20 @@ public class ListArrayAdapter extends ArrayAdapter<Tools> {
     private static final int TYPE_SEPARATOR = 1;
 
     public View getView(int position, View convertView, ViewGroup parent)  {
-        ViewHolder holder = null;
+        ViewHolder holder;
         int rowType = getItemViewType(position);
-        View View;
-        if (convertView == null) {
-            holder = new ViewHolder();
-            switch (rowType) {
-                case TYPE_ITEM:
-                    convertView = mInflater.inflate(R.layout.listview_item, null);
-                    holder.View=getItem(position).getView(mInflater, convertView);
-                    break;
-                case TYPE_SEPARATOR:
-                    convertView = mInflater.inflate(R.layout.list_title, null);
-                    holder.View=getItem(position).getView(mInflater, convertView);
-                    break;
-            }
-            convertView.setTag(holder);
+        holder = new ViewHolder();
+        switch (rowType) {
+            case TYPE_ITEM:
+                convertView = mInflater.inflate(R.layout.listview_item, null);
+                holder.View=getItem(position).getView(mInflater, convertView);
+                break;
+            case TYPE_SEPARATOR:
+                convertView = mInflater.inflate(R.layout.list_title, null);
+                holder.View=getItem(position).getView(mInflater, convertView);
+                break;
         }
-        else
-        {
-            holder = (ViewHolder) convertView.getTag();
-        }
+        convertView.setTag(holder);
         return convertView;
     }
 
