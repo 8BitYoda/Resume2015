@@ -24,6 +24,12 @@
     <string name="csu_title">Charleston Southern</string>
     <string name="csu_degree">Bachelor of Science in Computer Science</string>
     <string name="csu_gradYear">2015</string>
+    <string name="csu_summary">2nd Place in CDCA Mobile App competition with senior project SmartBaby</string>
+    <string name="csu_sum_sub"><i>Project Scope</i>: A wearable baby monitor for parents to monitor their child’s heart rate and temperature from their mobile device</string>
+    <string name="csu_sum_sub2"><i>Tools</i>: Android Studio, Arduino (C/C++), Git</string>
+    <string name="csu_summary2">University Scholar 2010-15 </string>
+    <string name="csu_summary3">Treasurer of Charleston Southern’s ACM Club 2013-14</string>
+    <string name="csu_summary4">Member of CSU’s D1 Cross Country and  Indoor/Outdoor Track teams 2011-13</string>
     <string name="ph_title">Patrick Henry Community College</string>
     <string name="ph_degree">Associates of Arts and Science</string>
     <string name="ph_gradYear">2010</string>
@@ -32,7 +38,7 @@
     <string name="title_fragment_about">Martin Hutchens</string>
     <string name="about_email">HutchensMartin@gmail.com</string>
     <string name="about_github">GitHub: 8BitYoda</string>
-    <string name="about_cell">cell: 555-555-5555</string>
+    <string name="about_cell">cell: 555\-555\-5555</string>
     <string name="sub1_fragment_about">Professional Summary</string>
     <string name="about_summary">Motivated and reliable Entry Level Java Developer with an excellent work ethic and programming language knowledge base</string>
     <string name="about_summary2">Junior Android developer able to build applications from concept to final product to the client’s or project’s specifications</string>
