@@ -38,7 +38,7 @@
     <string name="title_fragment_about">Martin Hutchens</string>
     <string name="about_email">HutchensMartin@gmail.com</string>
     <string name="about_github">GitHub: 8BitYoda</string>
-    <string name="about_cell">cell: 555\-555\-5555</string>
+    <string name="about_cell">cell: (555)555-5555</string>
     <string name="sub1_fragment_about">Professional Summary</string>
     <string name="about_summary">Motivated and reliable Entry Level Java Developer with an excellent work ethic and programming language knowledge base</string>
     <string name="about_summary2">Junior Android developer able to build applications from concept to final product to the client’s or project’s specifications</string>
