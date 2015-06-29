@@ -28,9 +28,6 @@
             android:name=".ExperienceItemActivity"
             android:label="@string/title_activity_experience_item"
             android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.martin.resume2015.MainActivity" />
         </activity>
     </application>
 

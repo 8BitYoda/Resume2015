@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/ExperienceLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,22 +17,154 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/exp_pic"
-                android:src="@drawable/ic_git"/>
+                android:src="@drawable/netgalaxy_logo"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/exp_name"
                 android:text="Test"
-                android:textSize="34sp"/>
+                android:fontFamily="sans-serif-medium"
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/exp_location"
+                android:text="charleston, SC"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/exp_dates"
+                android:text="2304 - 23"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
 
         </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exp_title"
+                android:text="test"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"/>
+        </android.support.v7.widget.CardView>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp">
+
+                <TableRow
+                    android:id="@+id/row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bullet"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exSum"
+                        android:text="sum1"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="14sp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bullet"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exSum2"
+                        android:text="sum2"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="14sp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bullet"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exSum3"
+                        android:text="sum3"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="14sp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bullet"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exSum4"
+                        android:text="sum4"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingBottom="4dp"
+                        android:textSize="14sp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
     </LinearLayout>
 
 </LinearLayout>

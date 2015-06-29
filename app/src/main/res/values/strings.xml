@@ -48,4 +48,15 @@
     <string name="title_activity_experience_item">Experience Item</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Experience Strings-->
+    <string name="expr1_summary">Worked with clients to build and develop Android applications</string>
+    <string name="expr1_summary2">Used Java to develop applications to meet client goals</string>
+    <string name="expr1_summary3">Built, maintained and supported databases for use with websites and mobile applications</string>
+    <string name="expr1_summary4">Organized application version control with Git and Bitbucket</string>
+    <string name="expr1_title">Intern</string>
+    <string name="expr2_summary">Worked with other team members to provide excellent customer service</string>
+    <string name="expr2_summary2">Developed better multi-tasking and problem solving skills in a high stress environment</string>
+    <string name="expr2_summary3">Established and improved my sales and marketing skills</string>
+    <string name="expr2_title">Server</string>
+
 </resources>

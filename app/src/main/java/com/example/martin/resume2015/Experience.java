@@ -73,7 +73,7 @@ public class Experience extends Fragment {
                 Intent intent = new Intent(getActivity(), ExperienceItemActivity.class);
                 intent.putExtra("expID", pos);
                 intent.putExtra("list", temp);
-                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)); //flag stops two instances from being created
                 return true;
             }
             @Override

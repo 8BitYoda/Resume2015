@@ -28,7 +28,6 @@ public class GitWebActivity extends ActionBarActivity {
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         //load my_github profile page
         webView = (WebView) findViewById(R.id.webView);
