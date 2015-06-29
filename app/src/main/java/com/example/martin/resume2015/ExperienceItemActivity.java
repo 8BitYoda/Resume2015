@@ -49,6 +49,7 @@ public class ExperienceItemActivity extends ActionBarActivity {
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("");
 
         exprPic = (ImageView) findViewById(R.id.exp_pic);
         exprName = (TextView) findViewById(R.id.exp_name);

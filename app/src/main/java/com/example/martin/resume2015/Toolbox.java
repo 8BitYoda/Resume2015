@@ -63,11 +63,11 @@ public class Toolbox extends Fragment {
         tools=new ArrayList<>();
         tools.add(new Header("Languages"));
         tools.add(new ListItem("Android",R.drawable.ic_android));
-        tools.add(new ListItem("XML", R.drawable.ic_xml));
         tools.add(new ListItem("Java",R.drawable.ic_java));
-        tools.add(new ListItem("JavaScript", R.drawable.ic_javascript));
         tools.add(new ListItem("C++", R.drawable.ic_cpp));
+        tools.add(new ListItem("XML", R.drawable.ic_xml));
         tools.add(new ListItem("Visual Basic", R.drawable.ic_vb));
+        tools.add(new ListItem("JavaScript", R.drawable.ic_javascript));
         tools.add(new ListItem("HTML", R.drawable.ic_html));
         tools.add(new ListItem("CSS", R.drawable.ic_css));
         tools.add(new Header("Source Control"));
