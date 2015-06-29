@@ -15,4 +15,9 @@ public class Job {
         this.dates=dates;
         this.photoId=photoId;
     }
+
+    @Override
+    public String toString(){
+        return title + "|" + location + "|" + dates + "|" + photoId;
+    }
 }

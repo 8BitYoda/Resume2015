@@ -1,12 +1,17 @@
 package com.example.martin.resume2015;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -15,7 +20,7 @@ import java.util.List;
 
 
 public class Experience extends Fragment {
-    private List<Job> jobs;
+    public List<Job> jobs;
     private RecyclerView recView;
     private View rootView;
 
@@ -45,12 +50,38 @@ public class Experience extends Fragment {
         final FragmentActivity c = getActivity();
         //final RecyclerView recyclerView = (RecyclerView) recView.findViewById(R.id.reView);
 
+
         LinearLayoutManager linLayMan = new LinearLayoutManager(c);
         recView.setLayoutManager(linLayMan);
         recView.setHasFixedSize(true);
 
         initializeData();
         initializeAdapter();
+
+        final GestureDetector mGestureDetector = new GestureDetector(getActivity(), new GestureDetector.SimpleOnGestureListener() {
+            @Override public boolean onSingleTapUp(MotionEvent e) {
+                return true;
+            }
+        });
+
+        recView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+            @Override
+            public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
+                View child = recyclerView.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
+                int pos = recyclerView.getChildPosition(child);
+                String temp = jobs.get(pos).toString();
+                Intent intent = new Intent(getActivity(), ExperienceItemActivity.class);
+                intent.putExtra("expID", pos);
+                intent.putExtra("list", temp);
+                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                return true;
+            }
+            @Override
+            public void onTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
+
+            }
+        });
+
         return rootView;
     }
 

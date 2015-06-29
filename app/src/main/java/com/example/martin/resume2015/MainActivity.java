@@ -134,7 +134,7 @@ public class MainActivity extends ActionBarActivity {
 
         if (id == R.id.action_call) {
             final Intent call = new Intent(Intent.ACTION_CALL);
-            call.setData(Uri.parse("tel:2762299141"));
+            call.setData(Uri.parse("tel:5551239141"));
             startActivity(call);
         }
         if (id == R.id.action_email) {

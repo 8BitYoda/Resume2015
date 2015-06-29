@@ -45,5 +45,7 @@
     <string name="about_summary3">Experienced in object-oriented programming; development, testing, and debugging code; design interfaces; and working with backend databases</string>
     <string name="about_summary4">Able to work well independently or as part of a professional development team in order to meet and achieve project goals</string>
     <string name="bullet">•</string>
+    <string name="title_activity_experience_item">Experience Item</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

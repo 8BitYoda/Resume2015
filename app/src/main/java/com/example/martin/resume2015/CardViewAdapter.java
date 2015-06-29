@@ -3,19 +3,22 @@ package com.example.martin.resume2015;
 /**
  * Created by Martin on 6/20/2015.
  */
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
 public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.JobViewHolder> {
 
-    public static class JobViewHolder extends RecyclerView.ViewHolder {
+    public static class JobViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         CardView cv;
         TextView jobName;
@@ -30,13 +33,20 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.JobVie
             jobLocation = (TextView)itemView.findViewById(R.id.job_location);
             jobDates = (TextView) itemView.findViewById(R.id.job_date);
             jobPhoto = (ImageView)itemView.findViewById(R.id.job_photo);
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v){
+
         }
     }
 
     List<Job> jobs;
 
-    CardViewAdapter(List<Job> persons){
-        this.jobs = persons;
+    CardViewAdapter(List<Job> job){
+        this.jobs = job;
     }
 
     @Override
@@ -48,11 +58,11 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.JobVie
     public JobViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.cardview_experience_item, viewGroup, false);
         JobViewHolder pvh = new JobViewHolder(v);
-//        CardView cv = (CardView) pvh.itemView.findViewById(R.id.reView);
+        //CardView cv = (CardView) pvh.itemView.findViewById(R.id.cv);
 //        cv.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//
+//               //stuff here
 //            }
 //        });
         return pvh;
